@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<!-- http://docs.jboss.org/hibernate/core/3.3/reference/en/html/session-configuration.html#configuration-optional -->
+
+	<session-factory>
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
+
+		<property name="hibernate.hbm2ddl.auto">none</property>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/liquidb</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Names of the annotated entity classes -->
+		<mapping class="com.filip.projects.db.liqui.models.Author" />
+		<mapping class="com.filip.projects.db.liqui.models.Book" />
+
+	</session-factory>
+
+</hibernate-configuration>

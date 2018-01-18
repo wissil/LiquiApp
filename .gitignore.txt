@@ -1,0 +1,14 @@
+# Eclipse files #
+.settings/
+target/
+.classpath
+.settings
+.project
+
+# IntelliJ files #
+.idea/
+*.iml
+.DS_Store
+
+# logs #
+logs/
