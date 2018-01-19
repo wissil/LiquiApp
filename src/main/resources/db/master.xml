@@ -8,4 +8,8 @@
   <include file="changelog/001-initial-schema.xml" relativeToChangelogFile="true"/>
   <include file="changelog/002-rename-author-table.xml" relativeToChangelogFile="true"/>
   <include file="changelog/003-rename-author-table.xml" relativeToChangelogFile="true"/>
+  <include file="changelog/004-add-author-date-of-birth.xml" relativeToChangelogFile="true"/>
+  <include file="changelog/005-convert-author-birth-to-datetime-format.xml" relativeToChangelogFile="true"/>
+  <include file="changelog/006-convert-author-birth-to-date-format.xml" relativeToChangelogFile="true"/>
+  
 </databaseChangeLog>
